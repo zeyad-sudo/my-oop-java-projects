@@ -1,0 +1,109 @@
+import java.util.Scanner; 
+
+public class Main {
+
+	public static void main(String[] args) {		Scanner input = new Scanner(System.in); 
+
+		 Book bk1=new Book("the adventur of sharlek holmes" , "A.conan doile" , "el ahram", 9);
+
+		 
+
+		
+
+		bk1.getTitle();
+
+		bk1.getAuthor(); 
+
+		bk1.getPublisher();
+
+		bk1.getPrice();
+
+	}
+
+}
+
+ 
+
+ class Book{
+
+ 	 Scanner input = new Scanner(System.in); 
+
+ 	 private String title; 
+
+    private String author; 
+
+    private String publisher; 
+
+    private double price; 
+
+    public Book(String title, String author, String publisher, double price) { 
+
+        this.title = title; 
+
+        this.author = author; 
+
+        this.publisher = publisher; 
+
+        this.price = price; 
+
+    } 
+
+ 	public String getTitle() { 
+
+        return title; 
+
+    } 
+
+ 
+
+    public String getAuthor() { 
+
+        return author; 
+
+    } 
+
+ 
+
+    public String getPublisher() { 
+
+        return publisher; 
+
+    } 
+
+ 
+
+    public void setPublisher(String publisher) { 
+
+        this.publisher = publisher; 
+
+    } 
+
+    public double getPrice() { 
+
+        while (price < 10) { 
+
+            System.out.println("it is not valid"); 
+
+            price = input.nextDouble(); 
+
+        } 
+
+ 
+
+        return price; 
+
+ 
+
+    } 
+
+ 
+
+    public void setPrice(double price) { 
+
+        this.price = price; 
+
+    } 
+
+ 
+
+ }
