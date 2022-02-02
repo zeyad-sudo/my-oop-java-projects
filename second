@@ -1,0 +1,57 @@
+public class encapculation {
+    public static void main(String[]args){
+        Book b1= new Book();
+        Book b2 = new Book();
+        b1.setAuthor("ahmed kamel");
+        b1.setList("102SM");
+        b1.setPublisher("el ahram");
+        b1.setPrice(1234);
+        b2.setPublisher("el tab3a");
+        b2.setAuthor("zeyad A");
+        b2.setList("145AF");
+        b2.setPrice(1790);
+        System.out.println("Auther Name :"+b1.getAuthor()+" \nbook price :"+ b1.getPrice()+"\nbook list :"+b1.getList());
+        System.out.println("______________________________________");
+        System.out.println("Auther Name :"+b2.getAuthor()+" \nbook price :"+ b2.getPrice()+"\nbook list :"+b2.getList());
+
+    }
+}
+class Book {
+    private String list ;
+    private String author ;
+    private String publisher ;
+    private int price ;
+    int c=0;
+    public Book ()
+    {
+        c++;
+    }
+    public String getList() {
+        return list;
+    }
+    public String getAuthor() {
+        return author;
+    }
+    public String getPublisher() {
+        return publisher;
+    }
+    public int getPrice() {
+        return price;
+    }
+    public void setList(String list){
+        this.list=list;
+    }
+    public void setAuthor(String author){
+        this.author= author;
+    }
+    public void setPublisher(String publisher){
+        this.publisher=publisher;
+    }
+    public void setPrice (int price) {
+        this.price = price;
+    }
+
+
+
+
+}
