@@ -1,1 +1,33 @@
 
+import java.util.*;
+public class test {
+    public static void main (String[]args) {
+        Scanner input = new Scanner(System.in);
+         Employee E1= new Employee("robert", 1994, "64C -WallStreet");
+         Employee E2= new Employee("sam", 2000, "68D -WallStreet");
+         Employee E3= new Employee("john", 1999, "26B -WallStreet");
+
+
+        System.out.println("Name   YOJ  Address" );
+        E1.PrintData();
+        E2.PrintData();
+        E3.PrintData();
+    }
+}
+
+class Employee{
+    String name ;
+     int YOJ ;
+     String address ;
+     double salary ;
+     public Employee (String name ,int YOJ  ,   String address )
+      {
+         this.name=name;
+          this.YOJ=YOJ;
+          this.address=address;
+      }
+      void PrintData(){
+         System.out.println(name+ "  "+YOJ+"  "+address);
+      }
+
+}
